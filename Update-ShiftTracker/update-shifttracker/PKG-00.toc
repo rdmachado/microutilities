@@ -1,0 +1,38 @@
+('..\\Utilities\\Update-ShiftTracker\\update-shifttracker\\PKG-00.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1,
+  'PYZ': 0},
+ [('PYZ-00.pyz',
+   '..\\Utilities\\Update-ShiftTracker\\update-shifttracker\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct', 'c:\\users\\rui machado\\anaconda3\\lib\\struct.pyo', 'PYMODULE'),
+  ('pyimod01_os_path',
+   'c:\\users\\rui '
+   'machado\\anaconda3\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'c:\\users\\rui '
+   'machado\\anaconda3\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'c:\\users\\rui '
+   'machado\\anaconda3\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\users\\rui '
+   'machado\\anaconda3\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('update-shifttracker',
+   'C:\\Users\\Rui '
+   'Machado\\Desktop\\private\\repos\\Utilities\\Utilities\\Update-ShiftTracker\\update-shifttracker.py',
+   'PYSOURCE'),
+  ('update-shifttracker.exe.manifest',
+   '..\\Utilities\\Update-ShiftTracker\\update-shifttracker\\update-shifttracker.exe.manifest',
+   'BINARY')],
+ True,
+ False,
+ False)

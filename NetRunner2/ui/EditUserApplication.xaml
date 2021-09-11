@@ -1,0 +1,60 @@
+﻿<Window x:Class="NetRunner2.ui.EditUserApplication"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetRunner2.ui"
+        mc:Ignorable="d"
+        Title="EditUserApplication" Height="88" Width="266" MaxWidth="270" Topmost="True" WindowStyle="None" BorderBrush="Black" BorderThickness="1 1 1 1" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+
+    <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid>
+            <TextBox  Width="250"  VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="textboxName" Margin="5"/>
+
+            <TextBlock IsHitTestVisible="False" Text="Application name" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=textboxName}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+        <Grid>
+        <TextBox  Width="227"  VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="textboxPath" Margin="5"/>
+            <TextBlock IsHitTestVisible="False" Text="Browse for an executable file" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=textboxPath}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+        <Button x:Name="buttonOpenFileDialog" Width="18" Height="18" Click="buttonOpenFileDialog_Click"></Button>
+        <Grid>
+            <TextBox  Width="250"  VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="textboxArguments" Margin="5"/>
+            <TextBlock IsHitTestVisible="False" Text="Optional command line arguments" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=textboxArguments}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+        <Button x:Name="buttonAddApplication" Width="250" Margin="5" Click="buttonAddApplication_Click">Add</Button>
+    </WrapPanel>
+</Window>
